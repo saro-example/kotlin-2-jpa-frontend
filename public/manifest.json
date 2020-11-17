@@ -1,0 +1,13 @@
+{
+  "name": "단트넷",
+  "short_name": "단트넷",
+  "icons": [
+    {
+      "src": "/icon/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}
