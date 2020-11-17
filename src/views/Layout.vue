@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div>
-      <router-view :key="this.$route.fullPath"/>
-    </div>
+    <router-view/>
   </div>
 </template>
 
@@ -11,7 +9,7 @@ import { Options, Vue } from 'vue-class-component';
 
 @Options({
   created() {
-
+    console.log(process.env.BASE_URL)
   }
 })
 export default class Layout extends Vue {

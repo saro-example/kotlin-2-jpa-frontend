@@ -14,22 +14,13 @@ export default createRouter({
       children: [
         {
           path: '/',
-          meta: { title: '단트넷' },
           component: () => import('@/views/Home.vue'),
-        }
-      ]
-    },
-    // 404 page not found
-    {
-      path: '/*',
-      component: () => import('@/views/Layout.vue'),
-      children: [
-        {
-          path: '/*',
-          component: () => import('@/views/404.vue'),
-          meta: { title: '단트넷 404' },
         },
-      ],
+        {
+          path: '/:catchAll(.*)',
+          component: () => import('@/views/404.vue'),
+        },
+      ]
     },
   ],
 })
