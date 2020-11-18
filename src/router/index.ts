@@ -17,7 +17,7 @@ export default createRouter({
           component: () => import('@/views/Home.vue'),
         },
         {
-          path: '/:catchAll(.*)',
+          path: '/:path(.*)',
           component: () => import('@/views/404.vue'),
         },
       ]
