@@ -1,13 +1,23 @@
+import Result from "@/models/Result";
+
 export default class BoardService {
 
-  public static getArticles(stockId: string, query: string, lessThenFeedNo: number,  callback: (result: any[]) => void) {
-    fetch(`/api/feeds?stockId=${encodeURIComponent(stockId)}&query=${encodeURIComponent(query)}&lessThenFeedNo=${lessThenFeedNo}`, {
+  public static getList(callback: (result: any[]) => void) {
+    fetch(`/api/board`, {
       method: 'GET',
-      credentials: 'same-origin',
-      headers: {'Content-Type': 'application/json'},
+      headers: {'Content-Type': 'application/json'}
     })
         .then((e) => e.json())
         .then(res => callback(res));
   }
 
+  public static addArticle(name: string, password: string, content: string, callback: (result: Result<any>) => void) {
+    fetch(`/api/board`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name, password, content})
+    })
+        .then((e) => e.json())
+        .then(res => callback(Result.assign(res)));
+  }
 }
