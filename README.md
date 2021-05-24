@@ -7,6 +7,9 @@
 
 # Vue.js
 
+##
+- 5월 25일 까지 vue-cli 를 vite 로 교체합니다.
+
 ## 준비과정 ([참고](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial))
 1. node.js 설치
    * [https://nodejs.org](https://nodejs.org)
