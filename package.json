@@ -1,5 +1,5 @@
 {
-  "name": "gs-web",
+  "name": "kotlin-vue-sample",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
