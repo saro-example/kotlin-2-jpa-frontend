@@ -1,17 +1,30 @@
 <template>
-  <router-view :key="$route.fullPath"/>
+  <router-view />
 </template>
 
-
 <script lang="ts">
-import {Options, Vue} from "vue-class-component";
+import { defineComponent } from 'vue'
 
-@Options({
-  created() {
+export default defineComponent({
+  computed: {
+    colorScheme() {
+      return this.$store.state.colorScheme;
+    }
+  },
+  watch: {
+    colorScheme(n: string, o: string) {
+      document.querySelector('html').className = n;
+    }
   }
 })
-
-export default class App extends Vue {
-
-}
 </script>
+
+<style>
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
+
+html {
+  &.light { background: #eee;  }
+  &.dark { background: #333; color:#aaa }
+}
+body { margin:0; }
+</style>
