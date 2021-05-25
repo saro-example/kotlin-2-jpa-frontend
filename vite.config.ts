@@ -13,8 +13,7 @@ export default defineConfig(({command, mode}) => {
       ...options,
       server: {
         proxy: {
-          '^/api': { target: 'http://localhost:8001', ws: true, changeOrigin: true },
-          '^/api/anime': { target: 'https://anissia.com', ws: true, changeOrigin: true }
+          '^/api': { target: 'http://localhost:8001', ws: true, changeOrigin: true }
         }
       }
     }
