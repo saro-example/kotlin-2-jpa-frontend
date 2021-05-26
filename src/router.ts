@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Layout from "@/views/Layout.vue";
 import P404 from "@/views/404.vue";
 import Home from "@/views/Home.vue";
+import Board from "./views/Board.vue";
 
 const router = createRouter({
 
@@ -18,6 +19,7 @@ const router = createRouter({
         path: '/', component: Layout,
         children: [
           { path: '/', component: Home },
+          { path: '/board', component: Board },
           { path: '/:path(.*)', component: P404, meta: { title: '가리사니 404' } },
         ]
       },
