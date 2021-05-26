@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Layout from "@/views/site/Layout.vue";
-import P404 from "@/views/site/404.vue";
-import Home from "@/views/site/Home.vue";
+import Layout from "@/views/Layout.vue";
+import P404 from "@/views/404.vue";
+import Home from "@/views/Home.vue";
 
 const router = createRouter({
 

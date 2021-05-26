@@ -7,14 +7,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   computed: {
-    colorScheme() {
-      return this.$store.state.colorScheme;
-    }
-  },
-  watch: {
-    colorScheme(n: string, o: string) {
-      document.querySelector('html').className = n;
-    }
+
   }
 })
 </script>

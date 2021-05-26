@@ -1,38 +1,18 @@
 <template>
-  <div>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
-    sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>sadf<br/>
+  <div class="text-center">
+    <br/>
+    <br/>
+    <img src="@/assets/logo.png"/>
+    <br/>
+    <br/>
+    <h1>홈 화면</h1>
   </div>
-  <aside>
-    asdfasdf
-  </aside>
+
 </template>
 
 
 <script lang="ts">
-import {Options, Vue} from "vue-class-component";
+import {Vue} from "vue-class-component";
 
-@Options({
-  computed: {
-  },
-
-})
-
-export default class Home extends Vue {
-  data() {
-    return {
-      noticeList: [],
-      inquiryList: []
-    };
-  }
-}
+export default class Home extends Vue {}
 </script>
-
-<style>
-
-</style>
