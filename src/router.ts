@@ -20,7 +20,7 @@ const router = createRouter({
         children: [
           { path: '/', component: Home },
           { path: '/board', component: Board },
-          { path: '/:path(.*)', component: P404, meta: { title: '가리사니 404' } },
+          { path: '/:path(.*)', component: P404, meta: { title: '404' } },
         ]
       },
   ],
